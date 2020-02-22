@@ -1,0 +1,49 @@
+{
+  "name": "puppeteerdemo",
+  "version": "1.0.0",
+  "description": "Demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "setup": "npm install",
+    "screenshots": "node getScreenShots.js",
+    "nsp": "nsp check",
+    "precommit": "npm run nsp && npm run lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "async": "^2.6.0",
+    "async-waterfall": "^0.1.5",
+    "aws-sdk": "^2.504.0",
+    "body-parser": "^1.18.3",
+    "btoa": "^1.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "file-system": "^2.2.2",
+    "http-proxy-middleware": "^0.19.1",
+    "husky": "^0.14.3",
+    "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1",
+    "mysql": "^2.17.1",
+    "puppeteer": "^1.19.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "s3-zip": "^3.1.0",
+    "winston": "^3.2.1",
+    "xml-stream": "^0.4.5",
+    "@google-cloud/storage": "^3.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "nsp": "^3.1.0",
+    "nodemon": "^1.18.6"
+  }
+}
